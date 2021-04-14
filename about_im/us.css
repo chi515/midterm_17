@@ -14,7 +14,7 @@ body{
     padding: 20px;
     border-bottom-left-radius: 0.3cm;
     border-bottom-right-radius: 0.3cm;
-    z-index: 2;
+    z-index: 4;
 }
 
 .top_img{
@@ -64,25 +64,6 @@ body{
     padding-left: 10px;
 }
 
-.button{
-    position: relative;
-    top: 80px;
-    left: 0px;
-    color: black;
-    background-color:#F5F5F5;
-    padding: 25px 100px;
-    font-size: 25px;
-    border: none;
-    transition: all 0.3s ease-in-out;
-
-}
-
-.button:hover{
-    background-color: #078d88;
-    color: white;
-    font-weight: bold;
-}
-
 .header{
     position: relative;
     bottom: 0px;
@@ -102,7 +83,46 @@ body{
     font-family: "Trebuchet MS";
     color: #074892;
 }
+.she{
+    position: relative;
+    left:200px;
+    top:100px;
+    width: 300px;
+    height: 300px;
+    float:left;
+    z-index: 3;
+}
 
+.she1{
+    position: relative;
+    left:700px;
+    top:500px;
+    width: 300px;
+    height: 300px;
+    float:left;
+    z-index: 3;
+}
+.he{
+    position: relative;
+    left:-400px;
+    top:920px;
+    width: 300px;
+    height: 300px;
+    float:left;
+    z-index: 3;
+}
+.picture{
+    position: relative;
+    width:90px;
+    height:90px;
+    left:500px;
+}
+.picture1{
+    position: relative;
+    width: 100px;
+    height:100px;
+    left:100px;
+}
 .sideleft{
     float: left;
     margin-left: 20px;
@@ -118,25 +138,64 @@ body{
         background-color:  #fff;
     }
 }
-
+.textchange{
+    text-align:center;
+    font-family: ‘Noto Sans TC’, sans-serif;
+    font-size:30px;
+}
 .int_content{
     float: left;
-    position: relative;
-    top: 100px;
-    left: 30px;
-    border-color: #d6f5d4;
+    position: absolute;
+    top: 440px;
+    left: 420px;
+    border-color: #b8f1b4;
     border-style: dashed;
-    padding: 30px;
-    width: 1000px;
+    padding: 20px;
+    width: 800px;
+    height:200px;
     margin-top: 10px;
-    overflow: auto;
-    background-color: #f8fcf8;
+    background-color: #d3ffd3;
     animation-name: fadein;
     animation-duration: 1.5s;
     animation-timing-function: linear;
-    animation-iteration-count: 1;/*只播一次*/ 
+    animation-iteration-count: 1;/*只播一次*/
+    
+}
+.int_content2{
+    float: left;
+    position: absolute;
+    top: 850px;
+    left: 250px;
+    border-color: #adc8f1;
+    border-style: dashed;
+    padding: 20px;
+    width: 800px;
+    height:200px;
+    margin-top: 10px;
+    background-color: #bcd7f1;
+    animation-name: fadein;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;/*只播一次*/  
 }
 
+.int_content3{
+    float: left;
+    position: absolute;
+    top: 1250px;
+    left: 400px;
+    border-color: #d6f5d4;
+    border-style: dashed;
+    padding: 20px;
+    width: 800px;
+    height:200px;
+    margin-top: 10px;
+    background-color: #edff9d;
+    animation-name: fadein;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;/*只播一次*/  
+}
 
 .e_sm_title{
     position: relative;
@@ -218,15 +277,6 @@ p{
     animation-iteration-count: 1;/*只播一次*/ 
 }
 
-.footer{
-    position: relative;
-    top: 150px;
-    bottom: 0;
-    width: 100%;
-    height: 80px;
-    background-color: #E8E8E8;
-
-}
 
 .pic1{
     width: 60px;
@@ -236,8 +286,8 @@ p{
     left: 15%;
 }
 .pic2{
-    width: 65px;
-    height: 65px;
+    width: 60px;
+    height: 60px;
     position: relative;
     top: 10px;
     left: 30%;
@@ -271,8 +321,18 @@ p{
     left: 45%;
     bottom: 15px;
 }
+.footer{
+    position: relative;
+    top: 1000px;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #E8E8E8;
+
+}
 
 .space{
-    padding: 80px;
+    padding: 600px;
 }
+
 

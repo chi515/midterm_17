@@ -70,7 +70,7 @@ body{
     left: 0px;
     color: black;
     background-color:#F5F5F5;
-    padding: 25px 100px;
+    padding: 25px 80px;
     font-size: 25px;
     border: none;
     transition: all 0.3s ease-in-out;
@@ -78,7 +78,7 @@ body{
 }
 
 .button:hover{
-    background-color: #078d88;
+    background-color: #b92804;
     color: white;
     font-weight: bold;
 }
@@ -122,15 +122,15 @@ body{
 .int_content{
     float: left;
     position: relative;
-    top: 100px;
-    left: 30px;
-    border-color: #d6f5d4;
+    top: 600px;
+    left: 200px;
+    border-color: #f5c1ba;
     border-style: dashed;
     padding: 30px;
     width: 1000px;
     margin-top: 10px;
-    overflow: auto;
-    background-color: #f8fcf8;
+    text-align: center;
+    background-color: #fcf8f8;
     animation-name: fadein;
     animation-duration: 1.5s;
     animation-timing-function: linear;
@@ -145,7 +145,7 @@ body{
     font-size: 50px;
     padding: 50px 30px;
     font-family: "Trebuchet MS";
-    color: teal;
+    color: #e04305;
     animation-name: fadein;
     animation-duration: 1.5s;
     animation-timing-function: linear;
@@ -165,19 +165,6 @@ body{
     animation-iteration-count: 1;/*只播一次*/ 
 }
 
-li{
-    list-style-type: decimal;
-    font-size: 25px;
-    font-weight: bolder;
-    text-decoration: underline;
-    color: 	#fcc203;
-    list-style-position: inside;
-    letter-spacing: 3px;
-    animation-name: fadein;
-    animation-duration: 1.5s;
-    animation-timing-function: linear;
-    animation-iteration-count: 1;/*只播一次*/ 
-}
 
 .different{
     list-style-type: square;
@@ -194,33 +181,221 @@ li{
 
 .explaination{
     position: relative;
-    top:100px;
-    left: 10px;
+    top:300px;
+    left: -450px;
     margin-top:100px ;
     margin-bottom: 100px;
     padding: 10px 30px;
     color: #919191;
-    font-size: 20px;
+    font-size: 60px;
     animation-name: fadein;
     animation-duration: 1.5s;
     animation-timing-function: linear;
-    animation-iteration-count: 1;/*只播一次*/ 
+    animation-iteration-count: 1;
+}
+.explaination1{
+    position: relative;
+    top:700px;
+    left:-90px;
+    margin-top:100px ;
+    margin-bottom: 100px;
+    padding: 10px 30px;
+    color: #919191;
+    font-size: 60px;
+    animation-name: fadein;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+}
+.explaination2{
+    position: relative;
+    top:1120px;
+    left: -820px;
+    margin-top:100px ;
+    margin-bottom: 100px;
+    padding: 10px 30px;
+    color: #919191;
+    font-size: 60px;
+    animation-name: fadein;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+}
+.picture{
+    width:550px;
+    height: 350px;
+}
+.coverflow{
+    position: relative;
+    float:left;
+    left: 400px;
+    width: 550px;
+    height: 350px;
+    top: 150px;
+    margin:10px;
+    border: 2px solid #810000;
+    border-style: dashed;
+}
+.coverflow>a{
+    display: block;
+    position: absolute;
+    top:0;
+    left:0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    /*當圖片數量增加，影片長度需更改，變為5s*圖片數量*/
+    -webkit-animation: silder 15s linear infinite;
+            animation: silder 15s linear infinite;
+}
+.coverflow>a>img{
+    max-width: 100%;
+}
+      
+/*每個圖片各延遲5秒*/
+.coverflow>a:nth-child(3) {
+    -webkit-animation-delay: 10s;
+            animation-delay: 10s;             
 }
 
-p{
-    font-size: 20px;
-    text-indent: 1cm;
-    line-height: 1.5cm;
-    color: #636363;
-    animation-name: fadein;
-    animation-duration: 1.5s;
-    animation-timing-function: linear;
-    animation-iteration-count: 1;/*只播一次*/ 
+  .coverflow>a:nth-child(2) {
+    -webkit-animation-delay: 5s;
+            animation-delay: 5s;
+  }
+
+  .coverflow>a:nth-child(1) {
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;    
+  }
+/*滑入時停止播放*/
+  .coverflow:hover>a{
+    -webkit-animation-play-state: paused;
+            animation-play-state: paused;
+}
+.coverflow2{
+    position: relative;
+    float:left;
+    left: -600px;
+    width: 550px;
+    height: 350px;
+    top: 480px;
+    margin:10px;
+    border: 2px solid #810000;
+    border-style: dashed;
+  }
+  .coverflow2>a{
+    display: block;
+    position: absolute;
+    top:0;
+    left:0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    /*當圖片數量增加，影片長度需更改，變為5s*圖片數量*/
+    -webkit-animation: silder 15s linear infinite;
+            animation: silder 15s linear infinite;
+  }
+  .coverflow2>a>img{
+    max-width: 100%;
+  }
+      
+/*每個圖片各延遲5秒*/
+.coverflow2>a:nth-child(3) {
+    -webkit-animation-delay: 10s;
+            animation-delay: 10s;             
+  }
+
+  .coverflow2>a:nth-child(2) {
+    -webkit-animation-delay: 5s;
+            animation-delay: 5s;
+  }
+
+  .coverflow2>a:nth-child(1) {
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;    
+  }
+/*滑入時停止播放*/
+  .coverflow2:hover>a{
+    -webkit-animation-play-state: paused;
+            animation-play-state: paused;
+}
+.coverflow3{
+    position: relative;
+    float:left;
+    left: 680px;
+    width: 550px;
+    height: 350px;
+    top: 500px;
+    margin:10px;
+    border: 2px solid #810000;
+    border-style: dashed;
+  }
+  .coverflow3>a{
+    display: block;
+    position: absolute;
+    top:0;
+    left:0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    /*當圖片數量增加，影片長度需更改，變為5s*圖片數量*/
+    -webkit-animation: silder 15s linear infinite;
+            animation: silder 15s linear infinite;
+  }
+  .coverflow3>a>img{
+    max-width: 100%;
+  }
+      
+/*每個圖片各延遲5秒*/
+.coverflow3>a:nth-child(3) {
+    -webkit-animation-delay: 10s;
+            animation-delay: 10s;             
+  }
+
+  .coverflow3>a:nth-child(2) {
+    -webkit-animation-delay: 5s;
+            animation-delay: 5s;
+  }
+
+  .coverflow3>a:nth-child(1) {
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;    
+  }
+/*滑入時停止播放*/
+  .coverflow3:hover>a{
+    -webkit-animation-play-state: paused;
+            animation-play-state: paused;
+}
+/*動畫關鍵影格*/
+@-webkit-keyframes silder {
+    3% {
+        opacity: 1;
+        filter: alpha(opacity=100);
+    }
+    27% {
+        opacity: 1;
+        filter: alpha(opacity=100);
+    }
+    30% {
+        opacity: 0;
+        filter: alpha(opacity=0);
+    }
+}
+@keyframes silder {
+    3% {
+        opacity: 1;
+        filter: alpha(opacity=100);
+    }
+    27% {
+        opacity: 1;
+        filter: alpha(opacity=100);
+    }
+    30% {
+        opacity: 0;
+        filter: alpha(opacity=0);
+    }
 }
 
 .footer{
     position: relative;
-    top: 150px;
+    top: 1200px;
     bottom: 0;
     width: 100%;
     height: 80px;
@@ -233,14 +408,14 @@ p{
     height: 60px;
     position: relative;
     top: 5px;
-    left: 15%;
+    left: -20%;
 }
 .pic2{
     width: 65px;
     height: 65px;
     position: relative;
     top: 10px;
-    left: 30%;
+    left: -10%;
 }
 
 .pic3{
@@ -248,27 +423,27 @@ p{
     height: 60px;
     position: relative;
     top: 10px;
-    left: 45%;
+    left: 0%;
 }
 .text_footer1{
     font-size: 20px;
     font-weight: bold;
     position: relative;
-    left: 15%;
+    left: -20%;
     bottom: 15px;
 }
 .text_footer2{
     font-size: 20px;
     font-weight: bold;
     position: relative;
-    left: 30%;
+    left: -10%;
     bottom: 15px;
 }
 .text_footer3{
     font-size: 20px;
     font-weight: bold;
     position: relative;
-    left: 45%;
+    left: 0%;
     bottom: 15px;
 }
 
