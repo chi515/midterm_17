@@ -220,7 +220,7 @@ p{
 
 .footer{
     position: relative;
-    top: 100px;
+    top: 900px;
     bottom: 0;
     width: 100%;
     height: 80px;
@@ -233,14 +233,14 @@ p{
     height: 60px;
     position: relative;
     top: 5px;
-    left: 15%;
+    left: -50%;
 }
 .pic2{
     width: 65px;
     height: 65px;
     position: relative;
     top: 10px;
-    left: 30%;
+    left: -40%;
 }
 
 .pic3{
@@ -248,28 +248,29 @@ p{
     height: 60px;
     position: relative;
     top: 10px;
-    left: 45%;
+    left: -30%;
 }
 .text_footer1{
     font-size: 20px;
     font-weight: bold;
     position: relative;
-    left: 15%;
+    left: -50%;
     bottom: 15px;
 }
 .text_footer2{
     font-size: 20px;
     font-weight: bold;
     position: relative;
-    left: 30%;
+    left: -40%;
     bottom: 15px;
 }
 .text_footer3{
     font-size: 20px;
     font-weight: bold;
-    position: relative;
-    left: 45%;
+    position: absolute;
+    left: 68%;
     bottom: 15px;
+    top:30px;
 }
 
 .space{

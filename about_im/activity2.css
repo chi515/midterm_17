@@ -127,8 +127,8 @@ body{
 .int_content1{
     float: left;
     position: relative;
-    top: 270px;
-    left:500px;
+    top: 300px;
+    left:100px;
     border-color: #f3c6c6;
     border-style: dashed;
     padding: 15px;
@@ -143,9 +143,9 @@ body{
 }
 .int_content2{
     float: left;
-    position: relative;
-    top: 500px;
-    left:205px;
+    position: absolute;
+    top: 1400px;
+    left:380px;
     border-color: #f3c6c6;
     border-style: dashed;
     padding: 15px;
@@ -160,9 +160,9 @@ body{
 }
 .int_content3{
     float: left;
-    position: relative;
-    top: 380px;
-    left:780px;
+    position: absolute;
+    top: 2100px;
+    left:380px;
     border-color: #f3c6c6;
     border-style: dashed;
     padding: 15px;
@@ -177,9 +177,9 @@ body{
 }
 .int_content4{
     float: left;
-    position: relative;
-    top: 630px;
-    left:780px;
+    position: absolute;
+    top: 2800px;
+    left:380px;
     border-color: #f3c6c6;
     border-style: dashed;
     padding: 15px;
@@ -223,9 +223,9 @@ body{
 
 
 .explaination{
-    position: relative;
-    top:170px;
-    left: 50px;
+    position: absolute;
+    top:470px;
+    left: 575px;
     margin-top:100px ;
     margin-bottom: 100px;
     padding: 10px 10px;
@@ -237,9 +237,9 @@ body{
     animation-iteration-count: 1;
 }
 .explaination1{
-    position: relative;
-    top:760px;
-    left:-190px;
+    position: absolute;
+    top:1170px;
+    left: 585px;
     margin-top:100px ;
     margin-bottom: 100px;
     padding: 10px 10px;
@@ -252,8 +252,8 @@ body{
 }
 .explaination3{
     position:absolute;
-    top:1680px;
-    left:950px;
+    top:1870px;
+    left: 585px;
     margin-top:100px ;
     margin-bottom: 100px;
     padding: 10px 10px;
@@ -266,8 +266,8 @@ body{
 }
 .explaination4{
     position:absolute;
-    top:2300px;
-    left:1000px;
+    top:2570px;
+    left: 585px;
     margin-top:100px ;
     margin-bottom: 100px;
     padding: 10px 10px;
@@ -293,7 +293,7 @@ p{
 
 .footer{
     position: relative;
-    top: 2500px;
+    top: 2800px;
     bottom: 0;
     width: 100%;
     height: 80px;
@@ -354,12 +354,12 @@ p{
 }
 
 .coverflow{
-    position: relative;
+    position: absolute;
     float:left;
     width: 550px;
     height: 350px;
-    top: -90px;
-    left: 170px;
+    top: 680px;
+    left: 1200px;
     margin:10px;
     border: 2px solid #810000;
     border-style: dashed;
@@ -400,12 +400,12 @@ p{
             animation-play-state: paused;
 }
 .coverflow2{
-    position: relative;
+    position: absolute;
     float:left;
-    left: -405px;
+    top: 1380px;
+    left: 1200px;
     width: 550px;
     height: 350px;
-    top: 135px;
     margin:10px;
     border: 2px solid #810000;
     border-style: dashed;
@@ -446,12 +446,12 @@ p{
             animation-play-state: paused;
 }
 .coverflow3{
-    position: relative;
+    position: absolute;
     float:left;
-    left: -470px;
+    top: 2080px;
+    left: 1200px;
     width: 550px;
     height: 350px;
-    top: 380px;
     margin:10px;
     border: 2px solid #810000;
     border-style: dashed;
@@ -492,10 +492,10 @@ p{
             animation-play-state: paused;
 }
 .coverflow4{
-    position: relative;
+    position: absolute;
     float:left;
-    top: 630px;
-    left: -465px;
+    top: 2780px;
+    left: 1200px;
     width: 550px;
     height: 350px;
     margin:10px;
